@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upcoming events — The Lewisians</title>
+<meta name="description" content="Upcoming coverages, meetings and deadlines of The Lewisians, pulled live from the publication's Google Calendar. Submit a coverage request for your own event.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead masthead-compact">
+  <div class="masthead-inner">
+    <p class="masthead-org">The Lewis College &middot; Higher Education Department &middot; Sorsogon City</p>
+    <h1 class="wordmark"><a href="index.html">The Lewisians</a></h1>
+  </div>
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="index.html">Home</a>
+      <a href="events.html" class="is-current" aria-current="page">Upcoming events</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="lede-wrap">
+    <h2 class="page-title">Upcoming events</h2>
+    <p class="lede">
+      Coverages, editorial meetings and deadlines the publication has scheduled.
+      This list reads directly from the Lewisians calendar, so it changes as the
+      editorial board updates it.
+    </p>
+  </section>
+
+  <section class="section" aria-labelledby="cal-heading">
+    <div class="section-head">
+      <h3 id="cal-heading" class="section-title">Calendar</h3>
+      <span class="section-meta" id="cal-status">Loading events…</span>
+    </div>
+    <div id="events" class="events" aria-live="polite"></div>
+  </section>
+
+  <section class="section request" aria-labelledby="form-heading">
+    <div class="request-panel">
+      <div class="request-intro">
+        <h3 id="form-heading" class="request-title">Request publication coverage</h3>
+        <p>
+          Tell us about your activity and the editorial board will assign writers or
+          photographers if the schedule allows. A confirmation slip is emailed to you
+          as a PDF once the request is logged.
+        </p>
+        <p class="request-note">Requests are reviewed before they appear on the public calendar.</p>
+      </div>
+
+      <form id="coverage-form" class="form" novalidate>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <p class="err" data-err="name"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required
+                 placeholder="you@example.com">
+          <p class="hint">The confirmation PDF is sent here.</p>
+          <p class="err" data-err="email"></p>
+        </div>
+
+        <div class="field">
+          <label for="organization">Organization or department</label>
+          <input id="organization" name="organization" type="text">
+        </div>
+
+        <div class="field">
+          <label for="event">Event name</label>
+          <input id="event" name="event" type="text" required>
+          <p class="err" data-err="event"></p>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="date">Date</label>
+            <input id="date" name="date" type="date" required>
+            <p class="err" data-err="date"></p>
+          </div>
+          <div class="field">
+            <label for="time">Start time</label>
+            <input id="time" name="time" type="time">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="location">Location</label>
+          <input id="location" name="location" type="text" required>
+          <p class="err" data-err="location"></p>
+        </div>
+
+        <div class="field">
+          <label for="coverage">Coverage needed</label>
+          <select id="coverage" name="coverage">
+            <option>Writing and photography</option>
+            <option>Photography only</option>
+            <option>Writing only</option>
+            <option>Video</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Anything else we should know</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <button class="btn btn-send" type="submit" id="submit-btn">Send request</button>
+        <p class="status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <p class="foot-mark">The Lewisians</p>
+    <p>Publication Office, The Lewis College, Sorsogon City, Sorsogon</p><br>
+    <p class="foot-small">ACADEMIC NOTICE <br>
+      This website is created for academic purposes only as part of the requirements for Software Engineering 1 at The Lewis College. 
+      It is intended for educational and demonstration purposes.</p>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/calendar.js"></script>
+<script src="js/form.js"></script>
+</body>
+</html>
+
+Academic Purpose Notice
+
+This website is created for academic purposes only as part of the requirements for Software Engineering 1 at The Lewis College. It is intended for educational and demonstration purposes.

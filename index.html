@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Lewisians — School Publication of The Lewis College</title>
+<meta name="description" content="The Lewisians is the official student publication of The Lewis College, Higher Education Department, Sorsogon City. Read the latest articles and magazine issues.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="masthead-org">The Lewis College &middot; Higher Education Department &middot; Sorsogon City</p>
+    <h1 class="wordmark">The Lewisians</h1>
+    <p class="masthead-tag">The student publication, in print and online.</p>
+  </div>
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="index.html" class="is-current" aria-current="page">Home</a>
+      <a href="events.html">Upcoming events</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="lede-wrap">
+    <p class="lede">
+      Everything the publication has filed this term — campus reporting, features,
+      and the full magazine archive — collected in one place for Lewisian students.
+    </p>
+  </section>
+
+  <section class="section" aria-labelledby="latest-heading">
+    <div class="section-head">
+      <h2 id="latest-heading" class="section-title">Latest publications</h2>
+      <span class="section-meta" id="article-count"></span>
+    </div>
+
+    <article class="lead" id="lead-article" hidden>
+      <a class="lead-figure" id="lead-link" href="#">
+        <img id="lead-image" src="" alt="">
+      </a>
+      <div class="lead-body">
+        <p class="kicker" id="lead-kicker"></p>
+        <h3 class="lead-title"><a id="lead-title-link" href="#"></a></h3>
+        <p class="lead-standfirst" id="lead-standfirst"></p>
+        <p class="byline">
+          <span id="lead-author"></span>
+          <time id="lead-date"></time>
+        </p>
+        <a class="read" id="lead-read" href="#">Read this story</a>
+      </div>
+    </article>
+
+    <ol class="story-list" id="story-list"></ol>
+  </section>
+
+  <section class="section magazines" aria-labelledby="mag-heading">
+    <div class="section-head">
+      <h2 id="mag-heading" class="section-title">Magazine issues</h2>
+      <span class="section-meta">Released each semester</span>
+    </div>
+    <div class="shelf" id="shelf"></div>
+  </section>
+
+  <section class="section handoff">
+    <p class="handoff-copy">
+      Planning an activity you want documented? Check what the publication is already
+      covering this month, then file a coverage request.
+    </p>
+    <a class="btn" href="events.html">See upcoming events</a>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-inner">
+    <p class="foot-mark">The Lewisians</p>
+    <p>Publication Office, The Lewis College, Sorsogon City, Sorsogon</p><br>
+    <p class="foot-small">ACADEMIC NOTICE <br>
+      This website is created for academic purposes only as part of the requirements for Software Engineering 1 at The Lewis College. 
+      It is intended for educational and demonstration purposes.</p>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/data.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
